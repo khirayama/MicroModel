@@ -1,0 +1,35 @@
+{
+  "name": "micro-model",
+  "version": "0.1.0",
+  "description": "micro model in es6 for client.",
+  "main": "lib/MicroModel.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "babel src --out-dir lib --source-maps-inline",
+    "watch": "babel src --out-dir lib --watch --source-maps-inline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khirayama/MicroModel.git"
+  },
+  "keywords": [
+    "framework",
+    "mvc",
+    "model",
+    "store",
+    "flux",
+    "react"
+  ],
+  "author": "khirayama",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/khirayama/MicroModel/issues"
+  },
+  "homepage": "https://github.com/khirayama/MicroModel#readme",
+  "dependencies": {
+    "babel": "^5.8.23",
+    "micro-emitter": "^1.0.5"
+  }
+}
