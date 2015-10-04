@@ -1,4 +1,3 @@
-import 'babel/polyfill';
 import MicroEmitter from 'micro-emitter';
 
 const EVENT_CHANGE = 'CHANGE_STORE';
@@ -8,8 +7,8 @@ if (global) global.localStorage = global.localStorage || { getItem: () => { retu
 export default class MicroModel extends MicroEmitter {
   constructor(options) {
     super();
-    this._localStorage = options.localStorage;
-    this.attributes = this._loda() || options.defaults;
+    this._localStorage = options.localStorage || true;
+    this.attributes = this._loda() || options.defaults || {};
   }
 
   set(key, value) {

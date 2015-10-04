@@ -1,14 +1,14 @@
-# MicroModel
+# MicroClientModel
 micro model in es6 for client.
 
 ## Getting Started
 
 ```
-$ npm install micro-model
+$ npm install micro-client-model
 ```
 
 ```javascript
-import MicroModel from 'micro-model';
+import MicroClientModel from 'micro-client-model';
 ```
 
 ## API
@@ -29,4 +29,19 @@ let options = {
 };
 
 new SomeModel(options);
+```
+
+## Example
+
+```javascript
+import MicroClientModel from 'micro-client-model';
+
+class SomeModel extends MicroClientModel {
+  constructor() {
+    super({
+      defaults: { message: 'Hello MicroModel!' },
+    });
+  }
+}
+export default new SomeModel();
 ```
